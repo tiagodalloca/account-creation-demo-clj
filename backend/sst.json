@@ -1,0 +1,5 @@
+{
+  "name": "account-creation-demo-clj-backend",
+  "region": "sa-east-1",
+  "main": "stacks/index.js"
+}
