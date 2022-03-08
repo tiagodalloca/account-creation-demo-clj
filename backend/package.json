@@ -10,11 +10,16 @@
     "remove": "sst remove"
   },
   "eslintConfig": {
-    "extends": ["serverless-stack"]
+    "extends": [
+      "serverless-stack"
+    ]
   },
   "dependencies": {
     "@serverless-stack/cli": "0.67.0",
     "@serverless-stack/resources": "0.67.0",
-    "aws-cdk-lib": "2.7.0"
+    "apollo-server": "^3.6.3",
+    "apollo-server-lambda": "^3.6.3",
+    "aws-cdk-lib": "2.7.0",
+    "graphql": "^15.8.0"
   }
 }
