@@ -7,7 +7,7 @@ export default class GraphQL extends sst.Stack {
     // Create a HTTP API
     const graphQLApi = new sst.Api(this, "GraphQLApi", {
       routes: {
-        "ANY /graphql": "graphql/service.handler",
+        "ANY /graphql": "src/graphql/service.handler",
       },
     });
 

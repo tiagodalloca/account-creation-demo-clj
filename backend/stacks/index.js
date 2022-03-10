@@ -1,4 +1,4 @@
-import GraphQLStack from "./GraphQL";
+import GraphQLStack from "./services/graphql";
 import MyStack from "./MyStack";
 
 export default function main(app) {
@@ -7,7 +7,6 @@ export default function main(app) {
     runtime: "nodejs14.x"
   });
 
-  new MyStack(app, "my-stack");
   new GraphQLStack(app, "graphql-stack");
 
   // Add more stacks
