@@ -1,5 +1,4 @@
-import GraphQLStack from "./services/graphql";
-import MyStack from "./MyStack";
+import CoreStack from './core-stack';
 
 export default function main(app) {
   // Set default runtime for all functions
@@ -7,7 +6,7 @@ export default function main(app) {
     runtime: "nodejs14.x"
   });
 
-  new GraphQLStack(app, "graphql-stack");
+  new CoreStack(app, "core-stack");
 
   // Add more stacks
 }
